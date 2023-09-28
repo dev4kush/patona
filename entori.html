@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>K&K ソフト株式会社</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://www.kksoft.co.jp/static/css/style.css">
+  <script type="text/javascript" src="http://www.kksoft.co.jp/static/js/jquery.js"></script>
+  <script type="text/javascript" src="http://www.kksoft.co.jp/static/js/jquery.smoothscroll.js"></script>
+  <script type="text/javascript" src="http://www.kksoft.co.jp/static/js/jquery.scrollshow.js"></script>
+  <script type="text/javascript" src="http://www.kksoft.co.jp/static/js/jquery.rollover.js"></script>
+  <script type="text/javascript" src="http://www.kksoft.co.jp/static/js/jquery.slidewide.js"></script>
+  <script type="text/javascript" src="http://www.kksoft.co.jp/static/js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1>
+        <a href="http://www.kksoft.co.jp/index.html"> <img src="http://www.kksoft.co.jp/static/images/logo_1.png" alt="K&Kソフト株式会社">
+        </a>
+      </h1>
+    </div>
+    <!-- /.inner -->
+  </header>
+
+  <div id="spMenu">
+    <span id="navBtn">
+      <span id="navBtnIcon"></span>
+    </span>
+  </div>
+  <nav>
+    <div class="inner">
+      <ul class="gnav">
+        <li><a href="http://www.kksoft.co.jp/index.html">ホーム</a></li>
+        <li><a href="http://www.kksoft.co.jp/compInfo/companyInfo.html">会社情報</a></li>
+        <li><a href="http://www.kksoft.co.jp/services/services.html">事業内容</a></li>
+        <li><a href="http://www.kksoft.co.jp/recruit/recruitInfo.html">リクルート</a></li>
+        <li><a href="http://www.kksoft.co.jp/concat/contact.html">お問い合わせ</a></li>
+        <li class="subnav"><a href="http://www.kksoft.co.jp/privacy/privacyPolicy.html">個人情報関連</a>
+          <ul>
+            <li><a href="http://www.kksoft.co.jp/privacy/privacyPolicy.html">個人情報保護方針</a></li>
+            <li><a href="http://www.kksoft.co.jp/privacy/privacyHandling.html">個人情報の取り扱いについて</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.inner -->
+  </nav>
+
+  <div id="contents">
+    <div id="topicpath">
+      <a href="#">サイトトップ＞リクルート</a> &gt; <a href="#">事業内容</a>
+    </div>
+    <div id="main">
+      <h2 class="text-primary">パートナー応募フォーム</h2>
+      <form method="post" id="contactForm">
+        <div class="mb-3">
+          <label for="companyName" class="form-label">貴社名</label>
+          <input type="text" class="form-control" id="companyName" name="companyName" placeholder="貴社名を入力してください">
+        </div>
+
+        <div class="mb-3">
+          <label for="department" class="form-label">部署名</label>
+          <input type="text" class="form-control" id="department" name="department" placeholder="部署名を入力してください">
+        </div>
+
+        <div class="mb-3">
+          <label for="contactName" class="form-label">ご担当者名</label>
+          <input type="text" class="form-control" id="contactName" name="contactName" placeholder="ご担当者名を入力してください">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">メールアドレス</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力してください">
+        </div>
+
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">お電話番号</label>
+          <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="お電話番号を入力してください">
+        </div>
+
+        <div class="mb-3">
+          <label for="notes" class="form-label">備考</label>
+          <textarea class="form-control" id="notes" name="notes" rows="4"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agree" name="privacyAgreement">
+            <label class="form-check-label" for="agree">
+              <a href="http://www.kksoft.co.jp/privacy/privacyHandling.html">個人情報ポリシーに同意する</a>
+            </label>
+          </div>
+
+          <a href="http://www.kksoft.co.jp/index.html" class="btn btn-secondary">キャンセル</a>
+          <button type="submit" class="btn btn-primary">送信</button>
+       
+      </form>
+    </div>
+ <!-- /#main -->
+ <div id="sub">
+  <h3>エンジニア募集</h3>
+  <ul class="submenu">
+    <li><a href="#" onclick="changeInfo('1');return false;"> 新卒募集要項 </a></li>
+    <li><a href="#" onclick="changeInfo('2');return false;">キャリア採用募集要項 </a></li>
+  </ul>
+ <h3>協業の募集</h3>
+  <ul class="submenu">
+    <li><a href="#" onclick="changeInfo('1');return false;"> パートナー企業様 </a></li>
+    <li><a href="#" onclick="changeInfo('2');return false;">個人事業主様 </a></li>
+  </ul>
+  <h3>人材派遣</h3>
+  <ul class="submenu">
+    <li><a href="#"> 人材派遣事業募集要項 </a></li>
+  </ul>
+
+</div>
+<!-- /#sub -->
+
+    <footer>
+      <div class="copyright">Copyright &copy; 2005-2019 K&K SOFT All rights reserved.</div>
+      <!-- /.copyright -->
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="emailscript.js"></script>
+</body>
+</html>
